@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {// 응답을 받는 메소드
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // 상대의 엑티비티에서 응답을 받는 메소드
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE_MENU) {
             Toast.makeText(
