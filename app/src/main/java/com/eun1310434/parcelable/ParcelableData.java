@@ -20,11 +20,9 @@ public class ParcelableData implements Parcelable {
     //Parcelable interface 활용 -  내부의 CREATOR 객체 생성
     @SuppressWarnings("unchecked")
     public static final Creator CREATOR = new Creator() {
-
         public ParcelableData createFromParcel(Parcel in) {
             return new ParcelableData(in);
         }
-
         public ParcelableData[] newArray(int size) {
             return new ParcelableData[size];
         }
